@@ -7,29 +7,41 @@
         
     }
     #proc{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rebeccapurple;
-    height: 30vh;
-    width: 100vw;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rebeccapurple;
+        height: 30vh;
+        width: 100vw;
     }
     #proc-b{
         padding: 10px;;
         height: auto;
         width: auto;
+        border: 2px solid black;
     }
     #proc-e{
         padding: 10px;;
         height: auto;
-        width: auto;
+        width: 300px;
+        border: 2px solid black;
     }
     #resul{
-    display: flex;
-    align-content: center;
-    justify-content: center ;
-    background-color: darkslategrey;
-    height: auto;
-    width: 100vw;
+        display: flex;
+        align-content: center;
+        justify-content: center ;
+        flex-wrap: wrap;
+        background-color: darkslategrey;
+        height: 70vh;
+        width: 100vw;
+    }
+    #bloco-cont{
+        display: flex;
+        align-content: center;
+        justify-content: center ;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+        width: 300px;
+        height: 400px;
     }
