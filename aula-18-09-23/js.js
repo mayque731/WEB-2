@@ -10,6 +10,10 @@ async function post() {
         "<div><h1>" + json[i].title + "</h1>" + json[i].body + "</div>";
       postagem.innerHTML = postagem.innerHTML + postsHTML;
     }
+  } else {
+    console.error;
+    alert("Algo deu errado!:/");
+    postagem.innerHTML = "servidor parou";
   }
 }
 post();

@@ -1,0 +1,35 @@
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        
+    }
+    #proc{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rebeccapurple;
+    height: 30vh;
+    width: 100vw;
+    }
+    #proc-b{
+        padding: 10px;;
+        height: auto;
+        width: auto;
+    }
+    #proc-e{
+        padding: 10px;;
+        height: auto;
+        width: auto;
+    }
+    #resul{
+    display: flex;
+    align-content: center;
+    justify-content: center ;
+    background-color: darkslategrey;
+    height: auto;
+    width: 100vw;
+    }
