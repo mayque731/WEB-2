@@ -37,16 +37,32 @@
         background-color: darkslategrey;
         height: auto;
         width: auto;
-        
+        padding-top: 20px;
         
     }
     #bloco-cont{
-        display: flex;
-        align-content: center;
-        justify-content: center ;
-        flex-wrap: wrap;
+        
+        
+        
         background-color: blueviolet;
         width: 300px;
         height: 400px;
         margin-bottom: 20px
+    }
+
+    #post-top{
+        display: flex;
+        align-content: auto;
+        background-color: brown;
+        height: 70%;
+        width: auto;
+    }
+
+    #post-bottom{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: blue;
+        height: 30%;
+        width: auto;
     }

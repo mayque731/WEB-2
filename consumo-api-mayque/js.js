@@ -8,7 +8,10 @@ async function post() {
   if (json.results.length > 0) {
     postagem.innerHTML = "";
     for (let i in json.results) {
-      let postsHTML = "<div id='bloco-cont'>" + json.results[i].name + "</div>";
+      let postsHTML =
+        "<div id='bloco-cont'><div id='post-bottom'>" +
+        json.results[i].name +
+        "</div></div>";
       postagem.innerHTML = postagem.innerHTML + postsHTML;
     }
   } else {
