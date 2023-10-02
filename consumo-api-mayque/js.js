@@ -9,8 +9,8 @@ async function post() {
     postagem.innerHTML = "";
     for (let i in json.results) {
       let postsHTML =
-     "<img id='img' src='https://rickandmortyapi.com/api/character/avatar/"+json.results[i].id+".jpeg'>"
-        "<div id='bloco-cont'><div id='post-bottom'>" +
+     "<div id='img-block'><img id='img' src='https://rickandmortyapi.com/api/character/avatar/"+json.results[i].id+".jpeg'>"+
+        "<div id='bloco-cont'>" +
         json.results[i].name +
         "</div></div>";
       postagem.innerHTML = postagem.innerHTML + postsHTML;
