@@ -14,6 +14,6 @@ app.get("characters", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(3000, "localhost", () => {
   console.log("server up on port 3000");
 });
