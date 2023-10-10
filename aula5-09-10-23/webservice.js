@@ -10,7 +10,7 @@ app.get("characters", async (req, res) => {
     const res = await axios.get("https://swapi.dev/api/people");
     res.json(res.data);
   } catch (error) {
-    res.status(500).send("errp ao buscar");
+    res.status(500).send("erro ao buscar");
   }
 });
 
