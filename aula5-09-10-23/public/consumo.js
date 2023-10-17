@@ -3,7 +3,7 @@ async function post() {
   let response = await fetch("https://swapi.dev/api/people/");
   let json = await response.json();
 
-  console.log(json.results);
+  //console.log(json.results);
 
   if (json.results.length > 0) {
     //postagem.innerHTML = "";
