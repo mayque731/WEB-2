@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
+app.get("/mostra", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/mostra.html"));
+});
+
 //configurando conexao mysql
 
 const connection = mysql.createConnection({

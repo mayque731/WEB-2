@@ -17,6 +17,7 @@
         <input type="number" id="idade" name="idade"><br><br>
 
         <button type="button" onclick="enviarDados();  window.location.reload();">Enviar</button>
+        <button type="button" onclick="window.location.href='mostra'">Mostrar Dados</button>
     </form>
     <div id="mostra">
 
@@ -36,23 +37,7 @@
                 .then(data => console.log(data))
                 .catch((error) => console.error('Erro:', error));
         }
-        function mostrarContas() {
-            fetch('http://localhost:3000/mostrar')
-                .then(response => response.json())
-                .then(data => {
-                    let tabela = '<table>';
-                    tabela += '<tr><th>ID</th><th>Nome</th><th>Idade</th></tr>';
 
-                    data.forEach(conta => {
-                        tabela += `<tr><td>${conta.id_conta}</td><td>${conta.nome}</td><td>${conta.idade}</td></tr>`;
-                    });
-
-                    tabela += '</table>';
-                    document.getElementById('mostra').innerHTML = tabela;
-                })
-                .catch(error => console.error('houve um erro ao buscar os dados:', error))
-        }
-        mostrarContas();
     </script>
 
 </body>
