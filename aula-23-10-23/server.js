@@ -33,9 +33,21 @@ app.post("/inserir", (req, res) => {
       if (err) {
         return res.status(500).json({ message: err });
       }
-      res.json({ message: "inserido com sucesso", insertId: result.insertId });
+      res.json({
+        message: "inserido com sucesso",
+        insertId: result.insertId,
+      });
     }
   );
+});
+
+app.get("/mostrar", (req, res) => {
+  connection.query("SELECT * FROM conta", (err, results) => {
+    if (err) {
+      return res.status(500).json({ message: err });
+    }
+    res.json(results);
+  });
 });
 
 app.listen(3000, () => {
